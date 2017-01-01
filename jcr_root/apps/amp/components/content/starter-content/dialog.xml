@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Content"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <amp-starter
+                    jcr:primaryType="cq:Widget"
+                    jcr:title="AMP starter content"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <heading
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Heading"
+                            fieldLabel="Enter Heading"
+                            name="./heading"
+                            required="{Boolean}true"
+                            xtype="textfield"/>
+                        <img
+                            jcr:primaryType="cq:Widget"
+                            name="./img"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </items>
+                </amp-starter>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>
